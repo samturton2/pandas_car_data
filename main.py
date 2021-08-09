@@ -12,4 +12,5 @@ print (df)
 
 df.to_csv("~\\GITHUB\\pandas_car_data\\Automobile_data.csv")
 
-df['average-mileage'].isnull().values.any()
+count_nan = df['average-mileage'].isnull().sum()
+print(f'Count of NaN: {count_nan}')
